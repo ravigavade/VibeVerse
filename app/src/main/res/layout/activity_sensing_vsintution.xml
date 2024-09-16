@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".sensingVSintution">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins"
+        android:text="Sensing (S) vs. Intuition (N)"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:paddingBottom="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="Do you focus more on the facts and details or on the bigger picture and possibilities?"
+                        android:padding="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_8sdp"
+
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radiogroup1"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/oone"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/otwo"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/othree"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/ofour"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/firsttv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="#56B55A"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Strongly Agree"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="When learning something new, do you prefer to rely on practical experience or theories and concepts?"
+                        android:padding="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_8sdp"
+
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radiogroup2"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/tone"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/ttwo"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/tthree"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/tfour"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/secondttv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="#56B55A"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Strongly Agree"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+
+                        android:text="Do you tend to remember specific details more easily than general impressions?"
+                        android:padding="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_8sdp"
+
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radiogroup3"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/thone"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/thtwo"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/ththree"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/thfour"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/thirdtv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="#56B55A"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Strongly Agree"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+
+                        android:layout_height="wrap_content"
+                        android:text="When solving problems, do you usually prefer tried-and-true methods or exploring new, creative options?"
+                        android:padding="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_8sdp"
+
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radiogroup4"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/foone"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fotwo"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fothree"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fofour"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/fourthtv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="#56B55A"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Strongly Agree"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+
+                        android:text="Do you tend to focus more on what is happening right now or on future possibilities?"
+                        android:padding="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/_8sdp"
+
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/radiogroup5"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/fione"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fitwo"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fithree"
+
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/fifour"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/fifthtv"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:textColor="#56B55A"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="Strongly Agree"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:layout_margin="@dimen/_8sdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

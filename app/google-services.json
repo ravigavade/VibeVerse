@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "845809038708",
+    "project_id": "vibeverse-a47ee",
+    "storage_bucket": "vibeverse-a47ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845809038708:android:41fa597707a98d6aac2821",
+        "android_client_info": {
+          "package_name": "com.csaim_.vibeverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_lBQwh2UYvxaO0ph6BjzbbEeRdOUPeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

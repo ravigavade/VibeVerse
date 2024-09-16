@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity=""
+    android:paddingHorizontal="@dimen/_16sdp"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="VibeVerse"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Align Your Vibe with Your Type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:backgroundTint="#7BA9A5"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_4sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/mbtitestbanner"
+                    android:layout_height="@dimen/_80sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        android:layout_height="wrap_content"
+                        android:text="MBTI Test"/>
+                    <TextView
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 mins"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:backgroundTint="#7BA9A5"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_4sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/mbtitestbanner"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        android:layout_height="wrap_content"
+                        android:text="MBTI Test"/>
+                    <TextView
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 mins"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/takeTestButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_marginVertical="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start MBTI Test"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:layout_margin="@dimen/_8sdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"/>
+
+
+</LinearLayout>

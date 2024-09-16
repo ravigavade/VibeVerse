@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:id="@+id/main"
+    android:paddingHorizontal="@dimen/_8sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/_100sdp"
+    tools:context=".RegisterPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Hello! Register to get started"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_8sdp"
+        />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:hint="mail"
+        android:background="@drawable/blackborder"
+        android:textColorHint="#868383"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:backgroundTint="#DCDADA"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:password="true"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:background="@drawable/blackborder"
+        android:textColorHint="#868383"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:backgroundTint="#DCDADA"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_10ssp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/linkToLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Already have an account?"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+
+</LinearLayout>
