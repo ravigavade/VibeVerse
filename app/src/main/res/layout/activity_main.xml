@@ -11,6 +11,9 @@
     android:paddingHorizontal="@dimen/_16sdp"
     android:background="@drawable/bg"
     tools:context=".MainActivity">
+
+
+<!--    heading and title-->
     <FrameLayout
         android:layout_marginTop="@dimen/_16sdp"
         android:layout_width="match_parent"
@@ -35,6 +38,8 @@
 
     </FrameLayout>
 
+
+<!--    for mbti test and the other one-->
     <LinearLayout
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_width="match_parent"
@@ -42,6 +47,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/mbtitestbanner"
             android:layout_weight="1"
             android:backgroundTint="#7BA9A5"
             android:layout_marginEnd="@dimen/_8sdp"
@@ -148,32 +154,486 @@
 
     </LinearLayout>
 
-
-
-
-
-
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/takeTestButton"
+    <TextView
         android:layout_width="match_parent"
-        android:backgroundTint="@color/white"
-        android:layout_marginVertical="@dimen/_20sdp"
-        app:cardCornerRadius="@dimen/_10ssp"
-        android:hapticFeedbackEnabled="true"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Start MBTI Test"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp"
-            android:layout_margin="@dimen/_8sdp"/>
+        android:layout_height="wrap_content"
+        android:text="16 Personality Types"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_8sdp"/>
 
-    </androidx.cardview.widget.CardView>
+
+<!--    for the 16 personality type-->
+    <HorizontalScrollView
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:backgroundTint="#7BA9A5"
+        android:background="@drawable/blackborder"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/p1"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ISTJ"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p2"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISFJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p3"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p4"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INTJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p5"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISTP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p6"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISFP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p7"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p8"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INTP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p9"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESTP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p10"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESFP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p11"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENFP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p12"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENTP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p13"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESTJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p14"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESFJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p15"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENFJ"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/p16"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mbtitestbanner"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENTJ"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
 
     <Button
         android:id="@+id/logoutbtn"

@@ -19,9 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.takeTestButton.setOnClickListener {
-            startActivity(Intent(this,extraversionVSintroverseion::class.java))
+
+        binding.mbtitestbanner.setOnClickListener {
+            startActivity(Intent(this,MBTItest::class.java))
         }
+
 
         binding.logoutbtn.setOnClickListener {
             try {
