@@ -4,251 +4,141 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.csaim.vibeverse.databinding.ActivitySensingVsintutionBinding
 
 class sensingVSintution : AppCompatActivity() {
     private lateinit var binding: ActivitySensingVsintutionBinding
+    private var result2 = 0
+    private var prev = 0
+    private var isFirstQuestionAnswered = false
+    private var isSecondQuestionAnswered = false
+    private var isThirdQuestionAnswered = false
+    private var isFourthQuestionAnswered = false
+    private var isFifthQuestionAnswered = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivitySensingVsintutionBinding.inflate(layoutInflater)
+        binding = ActivitySensingVsintutionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        
-
-
-
-        //variable to calculate the final on this activity
-        var result2=0
-        var prev=0
-
-        //colors for the agree disagree text
-//        #F60255 dark red
-//        #F44336 light red
-//        #117D16 dark green
-//        #56B55A light green
-
-
-
-        //first question
-        binding.oone.setOnClickListener{
-            result2-=prev
-            result2 -= 2
-            binding.firsttv.visibility=android.view.View.VISIBLE
-            binding.firsttv.text="Strongly disagree"
-            binding.firsttv.setTextColor(Color.parseColor("#F60255"))
-            binding.radiogroup1.visibility=android.view.View.GONE
+        // Set up click listeners for each question
+        binding.oone.setOnClickListener {
+            handleAnswerChange(-2, "Strongly disagree", "#F60255", binding.firsttv, binding.radiogroup1, 1)
         }
-        binding.otwo.setOnClickListener{
-            result2-=prev
-            result2 =result2-1
-
-            binding.firsttv.visibility=android.view.View.VISIBLE
-
-            binding.firsttv.text="Disagree"
-            binding.firsttv.setTextColor(Color.parseColor("#F44336"))
-            binding.radiogroup1.visibility=android.view.View.GONE
-
-
+        binding.otwo.setOnClickListener {
+            handleAnswerChange(-1, "Disagree", "#F44336", binding.firsttv, binding.radiogroup1, 1)
         }
-        binding.othree.setOnClickListener{
-            result2-=prev
-            result2 += 1
-            binding.radiogroup1.visibility=android.view.View.GONE
-            binding.firsttv.visibility=android.view.View.VISIBLE
-
-            binding.firsttv.text="Agree"
-            binding.firsttv.setTextColor(Color.parseColor("#56B55A"))
+        binding.othree.setOnClickListener {
+            handleAnswerChange(1, "Agree", "#56B55A", binding.firsttv, binding.radiogroup1, 1)
         }
-        binding.ofour.setOnClickListener{
-            result2-=prev
-            result2 += 2
-            binding.radiogroup1.visibility=android.view.View.GONE
-            binding.firsttv.visibility=android.view.View.VISIBLE
-
-            binding.firsttv.text="Strongly Disagree"
-            binding.firsttv.setTextColor(Color.parseColor("#117D16"))
+        binding.ofour.setOnClickListener {
+            handleAnswerChange(2, "Strongly Agree", "#117D16", binding.firsttv, binding.radiogroup1, 1)
         }
 
-
-
-        //second question
-        binding.tone.setOnClickListener{
-            result2-=prev
-            result2 -= 2
-            binding.secondttv.visibility=android.view.View.VISIBLE
-            binding.secondttv.text="Strongly disagree"
-            binding.secondttv.setTextColor(Color.parseColor("#F60255"))
-            binding.radiogroup2.visibility=android.view.View.GONE
+        binding.tone.setOnClickListener {
+            handleAnswerChange(-2, "Strongly disagree", "#F60255", binding.secondttv, binding.radiogroup2, 2)
         }
-        binding.ttwo.setOnClickListener{
-            result2-=prev
-            result2 -= 1
-            binding.secondttv.visibility=android.view.View.VISIBLE
-
-            binding.secondttv.text="Disagree"
-            binding.secondttv.setTextColor(Color.parseColor("#F44336"))
-            binding.radiogroup2.visibility=android.view.View.GONE
-
+        binding.ttwo.setOnClickListener {
+            handleAnswerChange(-1, "Disagree", "#F44336", binding.secondttv, binding.radiogroup2, 2)
         }
-        binding.tthree.setOnClickListener{
-            result2-=prev
-            result2 += 1
-            binding.radiogroup2.visibility=android.view.View.GONE
-            binding.secondttv.visibility=android.view.View.VISIBLE
-
-            binding.secondttv.text="Agree"
-            binding.secondttv.setTextColor(Color.parseColor("#56B55A"))
+        binding.tthree.setOnClickListener {
+            handleAnswerChange(1, "Agree", "#56B55A", binding.secondttv, binding.radiogroup2, 2)
         }
-        binding.tfour.setOnClickListener{
-            result2-=prev
-            result2 += 2
-            binding.radiogroup2.visibility=android.view.View.GONE
-            binding.secondttv.visibility=android.view.View.VISIBLE
-
-            binding.secondttv.text="Strongly Disagree"
-            binding.secondttv.setTextColor(Color.parseColor("#117D16"))
+        binding.tfour.setOnClickListener {
+            handleAnswerChange(2, "Strongly Agree", "#117D16", binding.secondttv, binding.radiogroup2, 2)
         }
 
-
-
-
-        //third question
-        binding.thone.setOnClickListener{
-            result2-=prev
-            result2 -= 2
-            binding.thirdtv.visibility=android.view.View.VISIBLE
-
-            binding.thirdtv.text="Strongly disagree"
-            binding.thirdtv.setTextColor(Color.parseColor("#F60255"))
-            binding.radiogroup3.visibility=android.view.View.GONE
+        binding.thone.setOnClickListener {
+            handleAnswerChange(-2, "Strongly disagree", "#F60255", binding.thirdtv, binding.radiogroup3, 3)
         }
-        binding.thtwo.setOnClickListener{
-            result2-=prev
-            result2 -= 1
-            binding.thirdtv.visibility=android.view.View.VISIBLE
-
-            binding.thirdtv.text="Disagree"
-            binding.thirdtv.setTextColor(Color.parseColor("#F44336"))
-            binding.radiogroup3.visibility=android.view.View.GONE
-
+        binding.thtwo.setOnClickListener {
+            handleAnswerChange(-1, "Disagree", "#F44336", binding.thirdtv, binding.radiogroup3, 3)
         }
-        binding.ththree.setOnClickListener{
-            result2-=prev
-            result2 += 1
-            binding.radiogroup3.visibility=android.view.View.GONE
-            binding.thirdtv.visibility=android.view.View.VISIBLE
-
-            binding.thirdtv.text="Agree"
-            binding.thirdtv.setTextColor(Color.parseColor("#56B55A"))
+        binding.ththree.setOnClickListener {
+            handleAnswerChange(1, "Agree", "#56B55A", binding.thirdtv, binding.radiogroup3, 3)
         }
-        binding.thfour.setOnClickListener{
-            result2-=prev
-            result2 += 2
-            binding.radiogroup3.visibility=android.view.View.GONE
-            binding.thirdtv.visibility=android.view.View.VISIBLE
-
-            binding.thirdtv.text="Strongly Disagree"
-            binding.thirdtv.setTextColor(Color.parseColor("#117D16"))
+        binding.thfour.setOnClickListener {
+            handleAnswerChange(2, "Strongly Agree", "#117D16", binding.thirdtv, binding.radiogroup3, 3)
         }
 
-
-
-
-        //fourth question
-        binding.foone.setOnClickListener{
-            result2-=prev
-            result2 -= 2
-            binding.fourthtv.visibility=android.view.View.VISIBLE
-
-            binding.fourthtv.text="Strongly disagree"
-            binding.fourthtv.setTextColor(Color.parseColor("#F60255"))
-            binding.radiogroup4.visibility=android.view.View.GONE
+        binding.foone.setOnClickListener {
+            handleAnswerChange(-2, "Strongly disagree", "#F60255", binding.fourthtv, binding.radiogroup4, 4)
         }
-        binding.fotwo.setOnClickListener{
-            result2-=prev
-            result2 -= 1
-            binding.fourthtv.visibility=android.view.View.VISIBLE
-
-            binding.fourthtv.text="Disagree"
-            binding.fourthtv.setTextColor(Color.parseColor("#F44336"))
-            binding.radiogroup4.visibility=android.view.View.GONE
-
+        binding.fotwo.setOnClickListener {
+            handleAnswerChange(-1, "Disagree", "#F44336", binding.fourthtv, binding.radiogroup4, 4)
         }
-        binding.fothree.setOnClickListener{
-            result2-=prev
-            result2 += 1
-            binding.radiogroup4.visibility=android.view.View.GONE
-            binding.fourthtv.visibility=android.view.View.VISIBLE
-
-            binding.fourthtv.text="Agree"
-            binding.fourthtv.setTextColor(Color.parseColor("#56B55A"))
+        binding.fothree.setOnClickListener {
+            handleAnswerChange(1, "Agree", "#56B55A", binding.fourthtv, binding.radiogroup4, 4)
         }
-        binding.fofour.setOnClickListener{
-            result2-=prev
-            result2 += 2
-            binding.radiogroup4.visibility=android.view.View.GONE
-            binding.fourthtv.visibility=android.view.View.VISIBLE
-
-            binding.fourthtv.text="Strongly Disagree"
-            binding.fourthtv.setTextColor(Color.parseColor("#117D16"))
+        binding.fofour.setOnClickListener {
+            handleAnswerChange(2, "Strongly Agree", "#117D16", binding.fourthtv, binding.radiogroup4, 4)
         }
 
-
-
-
-
-        //fifth question
-        binding.fione.setOnClickListener{
-            result2-=prev
-            result2 -= 2
-            binding.fifthtv.visibility=android.view.View.VISIBLE
-
-            binding.fifthtv.text="Strongly disagree"
-            binding.fifthtv.setTextColor(Color.parseColor("#F60255"))
-            binding.radiogroup5.visibility=android.view.View.GONE
+        binding.fione.setOnClickListener {
+            handleAnswerChange(-2, "Strongly disagree", "#F60255", binding.fifthtv, binding.radiogroup5, 5)
         }
-        binding.fitwo.setOnClickListener{
-            result2-=prev
-            result2 -= 1
-            binding.fifthtv.visibility=android.view.View.VISIBLE
-
-            binding.fifthtv.text="Disagree"
-            binding.fifthtv.setTextColor(Color.parseColor("#F44336"))
-            binding.radiogroup5.visibility=android.view.View.GONE
-
+        binding.fitwo.setOnClickListener {
+            handleAnswerChange(-1, "Disagree", "#F44336", binding.fifthtv, binding.radiogroup5, 5)
         }
-        binding.fithree.setOnClickListener{
-            result2-=prev
-            result2 += 1
-            binding.radiogroup5.visibility=android.view.View.GONE
-            binding.fifthtv.visibility=android.view.View.VISIBLE
-
-            binding.fifthtv.text="Agree"
-            binding.fifthtv.setTextColor(Color.parseColor("#56B55A"))
+        binding.fithree.setOnClickListener {
+            handleAnswerChange(1, "Agree", "#56B55A", binding.fifthtv, binding.radiogroup5, 5)
         }
         binding.fifour.setOnClickListener {
-            result2 -= prev
-            result2 += 2
-            binding.radiogroup5.visibility = android.view.View.GONE
-            binding.fifthtv.visibility = android.view.View.VISIBLE
-
-            binding.fifthtv.text = "Strongly Disagree"
-            binding.fifthtv.setTextColor(Color.parseColor("#117D16"))
+            handleAnswerChange(2, "Strongly Agree", "#117D16", binding.fifthtv, binding.radiogroup5, 5)
         }
 
+        // Retrieve scores from previous activities
         val extraversionScore = intent.getIntExtra("extraversionVSintroversion_Score", 0)
 
+        // Handle the "Next" button click
         binding.nextbtn.setOnClickListener {
-            val intent = Intent(this, thinkingVSfeeling::class.java)
-            intent.putExtra("extraversionVSintroversion_Score", extraversionScore)
-            intent.putExtra("sensingVSintution_Score", result2)
-            startActivity(intent)
-            finish()
+            if (isAllQuestionsAnswered()) {
+                val intent = Intent(this, thinkingVSfeeling::class.java)
+                intent.putExtra("extraversionVSintroversion_Score", extraversionScore)
+                intent.putExtra("sensingVSintution_Score", result2)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(this, "Please answer all questions before proceeding.", Toast.LENGTH_SHORT).show()
+            }
         }
 
+        // Initial button state
+        checkAllQuestionsAnswered()
+    }
+
+    // Function to handle answer changes
+    private fun handleAnswerChange(change: Int, answerText: String, color: String, textView: android.widget.TextView, radioGroup: android.widget.RadioGroup, questionIndex: Int) {
+        result2 -= prev
+        result2 += change
+        textView.visibility = android.view.View.VISIBLE
+        textView.text = answerText
+        textView.setTextColor(Color.parseColor(color))
+        radioGroup.visibility = android.view.View.GONE
+        prev = change
+        markQuestionAsAnswered(questionIndex)
+    }
+
+    // Mark question as answered
+    private fun markQuestionAsAnswered(questionIndex: Int) {
+        when (questionIndex) {
+            1 -> isFirstQuestionAnswered = true
+            2 -> isSecondQuestionAnswered = true
+            3 -> isThirdQuestionAnswered = true
+            4 -> isFourthQuestionAnswered = true
+            5 -> isFifthQuestionAnswered = true
+        }
+        checkAllQuestionsAnswered()
+    }
+
+    // Check if all questions are answered
+    private fun isAllQuestionsAnswered(): Boolean {
+        return isFirstQuestionAnswered && isSecondQuestionAnswered && isThirdQuestionAnswered && isFourthQuestionAnswered && isFifthQuestionAnswered
+    }
+
+    // Enable/disable next button based on answers
+    private fun checkAllQuestionsAnswered() {
+        binding.nextbtn.isEnabled = isAllQuestionsAnswered()
     }
 }

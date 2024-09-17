@@ -255,11 +255,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
-
                         android:layout_height="wrap_content"
-                        android:text="Do you tend to prioritize fairness or compassion when making decisions?
-
-"
+                        android:text="Do you tend to prioritize fairness or compassion when making decisions?"
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -403,5 +400,6 @@
             android:layout_margin="@dimen/_8sdp"/>
 
     </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

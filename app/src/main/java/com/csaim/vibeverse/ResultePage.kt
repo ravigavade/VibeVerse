@@ -1,5 +1,6 @@
 package com.csaim.vibeverse
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -48,6 +49,16 @@ class ResultePage : AppCompatActivity() {
         val mbtiType = calculateMBTIType(extraversionScore, sensingScore, thinkingScore, judgingScore)
         binding.resulttv.text = "$mbtiType"
 
+        binding.conttbtn.setOnClickListener {
+            val intent = Intent(this, detailedresults::class.java)
+            intent.putExtra("extraversionVSintroversion_Score", extraversionScore)
+            intent.putExtra("sensingVSintution_Score", sensingScore)
+            intent.putExtra("thinkingVSfeeling_Score", thinkingScore)
+            intent.putExtra("judgingVSperceiving_Score", judgingScore)
+            intent.putExtra("mbtiType", mbtiType)
+            startActivity(intent)
+            finish()
+        }
 
 
     }

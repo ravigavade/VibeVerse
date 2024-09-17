@@ -124,6 +124,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
+                        android:padding="@dimen/_3sdp"
+                        android:src="@drawable/locked"
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
                         />
@@ -135,7 +137,7 @@
                         android:textStyle="bold"
                         android:fontFamily="@font/poppins"
                         android:layout_height="wrap_content"
-                        android:text="MBTI Test"/>
+                        android:text="Enneagram"/>
                     <TextView
                         android:textSize="@dimen/_8sdp"
                         android:textColor="@color/white"
