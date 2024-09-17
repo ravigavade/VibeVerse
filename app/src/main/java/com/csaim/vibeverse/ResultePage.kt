@@ -13,11 +13,10 @@ import pl.droidsonroids.gif.GifDrawable
 
 class ResultePage : AppCompatActivity() {
     private lateinit var binding: ActivityResultePageBinding
-    private lateinit var binding1: ActivityLoginPageBinding
-    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        auth = FirebaseAuth.getInstance()
+
         binding=ActivityResultePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -33,11 +32,7 @@ class ResultePage : AppCompatActivity() {
         // Optionally start playback
         gifDrawable.start()
 
-        // Get the current user's email
-//        val currentUser = auth.currentUser
-//        val email = currentUser?.email ?: "Unknown User"
-//
-//        binding.resulttv.text="Congratulations $email"
+
 
         // Retrieve scores from previous activities
         val extraversionScore = intent.getIntExtra("extraversionVSintroversion_Score", 0)

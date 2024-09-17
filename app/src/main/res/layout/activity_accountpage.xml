@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/_16sdp"
+    android:layout_height="match_parent"
+    tools:context=".accountpage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="VibeVerse"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Align Your Vibe with Your Type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7BA9A5"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:padding="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Weclcome to VibeVerse!"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="At VibeVerse, we’re all about celebrating and understanding the diverse spectrum of human personality."
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="Our Vision"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Our vision is to foster a deeper understanding of oneself and others, helping people connect and thrive in both personal and professional settings. We believe that by embracing the richness of individual personalities, we can create a more empathetic and connected world."
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+<!--    <View-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"/>-->
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7BA9A5"
+        app:cardCornerRadius="@dimen/_8sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/account2"/>
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="mail id will be displayedd here"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="start"
+                android:gravity="center"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/logoutbtn"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/logout"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/getStartedBtn"
+        android:layout_width="match_parent"
+        android:backgroundTint="#7BA9A5"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_5sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/home1"/>
+
+
+
+            <ImageView
+                android:id="@+id/account"
+                android:layout_weight="1"
+                android:layout_marginVertical="@dimen/_2sdp"
+
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/account2"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

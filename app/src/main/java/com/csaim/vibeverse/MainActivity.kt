@@ -25,20 +25,20 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        binding.logoutbtn.setOnClickListener {
-            try {
-                Firebase.auth.signOut()
-                if (Firebase.auth.currentUser == null) {
-                    startActivity(Intent(this, LoginPage::class.java))
-                    finish()
-                } else {
-                    Toast.makeText(this, "Sign out failed", Toast.LENGTH_SHORT).show()
-                }
-            } catch (e: Exception) {
-                Log.e("SignOutError", "Error signing out: ${e.message}")
-                Toast.makeText(this, "Sign out failed", Toast.LENGTH_SHORT).show()
-            }
+
+
+        binding.account.setOnClickListener{
+
+            val intent=(Intent(this,accountpage::class.java))
+            startActivity(intent)
+            finish()
+            overridePendingTransition(0, 0)
         }
 
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        // Close all activities and exit the app
+        finishAffinity()
     }
 }
