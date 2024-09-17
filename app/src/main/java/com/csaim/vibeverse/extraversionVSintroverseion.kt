@@ -16,10 +16,7 @@ class extraversionVSintroverseion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityExtraversionVsintroverseionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.nextbtn.setOnClickListener {
-            startActivity(Intent(this,sensingVSintution::class.java))
-        }
+        Toast.makeText(this, "Quitting now will end the test and discard your answers.", Toast.LENGTH_LONG).show()
 
 
         //variable to calculate the final on this activity
@@ -42,7 +39,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.firsttv.text="Strongly disagree"
             binding.firsttv.setTextColor(Color.parseColor("#F60255"))
             binding.radiogroup1.visibility=android.view.View.GONE
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.otwo.setOnClickListener{
             result-=prev
@@ -54,7 +50,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.firsttv.setTextColor(Color.parseColor("#F44336"))
             binding.radiogroup1.visibility=android.view.View.GONE
 
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
 
         }
         binding.othree.setOnClickListener{
@@ -65,7 +60,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.firsttv.text="Agree"
             binding.firsttv.setTextColor(Color.parseColor("#56B55A"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.ofour.setOnClickListener{
             result-=prev
@@ -75,7 +69,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.firsttv.text="Strongly Disagree"
             binding.firsttv.setTextColor(Color.parseColor("#117D16"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -88,7 +81,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.secondttv.text="Strongly disagree"
             binding.secondttv.setTextColor(Color.parseColor("#F60255"))
             binding.radiogroup2.visibility=android.view.View.GONE
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.ttwo.setOnClickListener{
             result-=prev
@@ -99,7 +91,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.secondttv.setTextColor(Color.parseColor("#F44336"))
             binding.radiogroup2.visibility=android.view.View.GONE
 
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.tthree.setOnClickListener{
             result-=prev
@@ -109,7 +100,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.secondttv.text="Agree"
             binding.secondttv.setTextColor(Color.parseColor("#56B55A"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.tfour.setOnClickListener{
             result-=prev
@@ -119,7 +109,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.secondttv.text="Strongly Disagree"
             binding.secondttv.setTextColor(Color.parseColor("#117D16"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -134,7 +123,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.thirdtv.text="Strongly disagree"
             binding.thirdtv.setTextColor(Color.parseColor("#F60255"))
             binding.radiogroup3.visibility=android.view.View.GONE
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.thtwo.setOnClickListener{
             result-=prev
@@ -145,7 +133,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.thirdtv.setTextColor(Color.parseColor("#F44336"))
             binding.radiogroup3.visibility=android.view.View.GONE
 
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.ththree.setOnClickListener{
             result-=prev
@@ -155,7 +142,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.thirdtv.text="Agree"
             binding.thirdtv.setTextColor(Color.parseColor("#56B55A"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.thfour.setOnClickListener{
             result-=prev
@@ -165,7 +151,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.thirdtv.text="Strongly Disagree"
             binding.thirdtv.setTextColor(Color.parseColor("#117D16"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -180,7 +165,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.fourthtv.text="Strongly disagree"
             binding.fourthtv.setTextColor(Color.parseColor("#F60255"))
             binding.radiogroup4.visibility=android.view.View.GONE
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fotwo.setOnClickListener{
             result-=prev
@@ -191,7 +175,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.fourthtv.setTextColor(Color.parseColor("#F44336"))
             binding.radiogroup4.visibility=android.view.View.GONE
 
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fothree.setOnClickListener{
             result-=prev
@@ -201,7 +184,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.fourthtv.text="Agree"
             binding.fourthtv.setTextColor(Color.parseColor("#56B55A"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fofour.setOnClickListener{
             result-=prev
@@ -211,7 +193,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.fourthtv.text="Strongly Disagree"
             binding.fourthtv.setTextColor(Color.parseColor("#117D16"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
 
 
@@ -227,7 +208,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.fifthtv.text="Strongly disagree"
             binding.fifthtv.setTextColor(Color.parseColor("#F60255"))
             binding.radiogroup5.visibility=android.view.View.GONE
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fitwo.setOnClickListener{
             result-=prev
@@ -238,7 +218,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
             binding.fifthtv.setTextColor(Color.parseColor("#F44336"))
             binding.radiogroup5.visibility=android.view.View.GONE
 
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fithree.setOnClickListener{
             result-=prev
@@ -248,7 +227,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.fifthtv.text="Agree"
             binding.fifthtv.setTextColor(Color.parseColor("#56B55A"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
         binding.fifour.setOnClickListener {
             result -= prev
@@ -258,10 +236,15 @@ class extraversionVSintroverseion : AppCompatActivity() {
 
             binding.fifthtv.text = "Strongly Disagree"
             binding.fifthtv.setTextColor(Color.parseColor("#117D16"))
-            Toast.makeText(this, "result: $result", Toast.LENGTH_SHORT).show()
         }
 
 
+        binding.nextbtn.setOnClickListener {
+            val intent = Intent(this, sensingVSintution::class.java)
+            intent.putExtra("extraversionVSintroversion_Score", result)
+            startActivity(intent)
+            finish()
+        }
 
 
 

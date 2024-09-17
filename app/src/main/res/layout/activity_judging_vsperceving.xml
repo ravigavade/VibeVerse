@@ -386,7 +386,7 @@
     </ScrollView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/nextbtn"
+        android:id="@+id/submitbtn"
         android:layout_width="match_parent"
         android:backgroundTint="@color/black"
         android:layout_marginBottom="@dimen/_20sdp"

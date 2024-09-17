@@ -60,4 +60,8 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
     implementation("com.google.firebase:firebase-analytics")
 
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.22")
+
+
+
 }
