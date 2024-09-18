@@ -1,15 +1,20 @@
 package com.csaim.vibeverse
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.csaim.vibeverse.databinding.ActivityDetailedresultsBinding
+import com.csaim.vibeverse.databinding.ActivityMainBinding
 
 class detailedresults : AppCompatActivity() {
     private lateinit var binding: ActivityDetailedresultsBinding
+    private lateinit var binding1: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailedresultsBinding.inflate(layoutInflater)
+        binding1 = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Retrieve scores from previous activities
@@ -19,23 +24,78 @@ class detailedresults : AppCompatActivity() {
         val judgingScore = intent.getIntExtra("judgingVSperceiving_Score", 0)
         val mbtiType = intent.getStringExtra("mbtiType")
 
-        // Normalize the score to a percentage
-        fun normalizeScore(score: Int): Float {
-            return when (score) {
-                -2 -> 10f
-                -1 -> 35f
-                0 -> 50f
-                1 -> 65f
-                2 -> 90f
-                else -> 50f  // Default to 50% if something unexpected occurs
-            }
+        // Define the range for the score
+        val minScore = -5.0
+        val maxScore = 5.0
+
+
+        // Function to normalize the score and convert to percentage
+        fun getPercentage(score: Int): Double {
+            return ((score - minScore) / (maxScore - minScore)) * 100
         }
 
-        // Normalize each score
-        val extraversionPercentage = normalizeScore(extraversionScore)
-        val sensingPercentage = normalizeScore(sensingScore)
-        val thinkingPercentage = normalizeScore(thinkingScore)
-        val judgingPercentage = normalizeScore(judgingScore)
+// For Extraversion vs Introversion
+        val extraversionPercentage = getPercentage(extraversionScore)
+        if (extraversionScore > 0) {
+            binding.block1.text = "$extraversionPercentage%"
+            binding.block1tv.text = "Extrovert%"
+
+            binding.blockimage1.setImageResource(R.drawable.extrovert)
+        } else if (extraversionScore < 0) {
+            binding.block1.text = "$extraversionPercentage%"
+            binding.block1tv.text = "Introvert"
+            binding.blockimage1.setImageResource(R.drawable.introvert)
+        } else {
+            binding.block1.text = "Balanced"
+//            binding.blockimage1.setImageResource(R.drawable.balanced) // Optional balanced image
+        }
+
+// For Sensing vs Intuition
+        val sensingPercentage = getPercentage(sensingScore)
+        if (sensingScore > 0) {
+            binding.block2.text = "$sensingPercentage%"
+            binding.block2tv.text = "Sensing"
+            binding.blockimage2.setImageResource(R.drawable.sensing)
+        } else if (sensingScore < 0) {
+            binding.block2.text = "$sensingPercentage%"
+            binding.block2tv.text = "Intuition"
+            binding.blockimage2.setImageResource(R.drawable.intution)
+        } else {
+            binding.block2.text = "Balanced"
+//            binding.blockimage2.setImageResource(R.drawable.balanced) // Optional balanced image
+        }
+
+// For Thinking vs Feeling
+        val thinkingPercentage = getPercentage(thinkingScore)
+        if (thinkingScore > 0) {
+            binding.block3.text = "$thinkingPercentage%"
+            binding.block3tv.text = "Thinking"
+            binding.blockimage3.setImageResource(R.drawable.thinking)
+        } else if (thinkingScore < 0) {
+            binding.block3.text = "$thinkingPercentage%"
+            binding.block3tv.text = "Feeling"
+            binding.blockimage3.setImageResource(R.drawable.feelings)
+        } else {
+            binding.block3.text = "Balanced"
+//            binding.blockimage3.setImageResource(R.drawable.balanced) // Optional balanced image
+        }
+
+// For Judging vs Perceiving
+        val judgingPercentage = getPercentage(judgingScore)
+        if (judgingScore > 0) {
+            binding.block4.text = "$judgingPercentage%"
+            binding.block4tv.text = "Judging"
+            binding.blockimage4.setImageResource(R.drawable.judging)
+        } else if (judgingScore < 0) {
+            binding.block4.text = "$judgingPercentage%"
+            binding.block4tv.text = "Perceiving"
+            binding.blockimage4.setImageResource(R.drawable.perceiving)
+        } else {
+            binding.block4.text = "Balanced"
+//            binding.blockimage4.setImageResource(R.drawable.balanced) // Optional balanced image
+        }
+
+
 
         // Set the typeName, description, traits, and famous personalities based on MBTI type
         var typeName = ""
@@ -244,8 +304,10 @@ class detailedresults : AppCompatActivity() {
             }
         }
 
+
         // Set the text views and other UI elements
-        binding.typeName.text = typeName
+        binding.typeName.text = mbtiType
+        binding.typetv2.text=typeName
         binding.description.text = description
         binding.trait1.text = trait1
         binding.trait2.text = trait2
@@ -258,6 +320,22 @@ class detailedresults : AppCompatActivity() {
         binding.famousPerson2.text = famousPerson2
         binding.famousPerson3.text = famousPerson3
         binding.famousPerson4.text = famousPerson4
+
+        binding.traittv.text="$mbtiType's have the following personality traits"
+
+        val REQUEST_CODE=0
+
+        binding.homebtn.setOnClickListener {
+            val intent=Intent(this,MainActivity::class.java)
+            intent.putExtra("extraversionVSintroversion_Score", extraversionPercentage)
+            intent.putExtra("sensingVSintution_Score", sensingPercentage)
+            intent.putExtra("thinkingVSfeeling_Score", thinkingPercentage)
+            intent.putExtra("judgingVSperceiving_Score", judgingPercentage)
+            intent.putExtra("mbtiType", mbtiType)
+            intent.putExtra("showResultBanner", true)
+            startActivity(intent)
+            finish()
+        }
 
         // You can also use the percentages to update any UI elements that reflect the normalized scores
         // Example: binding.extraversionProgressBar.progress = extraversionPercentage.toInt()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg1"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,18 +10,34 @@
     android:layout_height="match_parent"
     tools:context=".judgingVSperceving">
 
-    <TextView
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:paddingTop="@dimen/_20sdp"
-        android:fontFamily="@font/poppins"
-        android:text="Judging (J) vs. Perceiving (P)"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="@dimen/_16ssp" />
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:src="@drawable/filledstar"/>
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:src="@drawable/filledstar"/>
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:src="@drawable/filledstar"/>
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:src="@drawable/filledstar"/>
+    </LinearLayout>
 
 
     <ScrollView
@@ -33,7 +49,7 @@
 
 
         <LinearLayout
-            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -384,6 +400,8 @@
 
         </LinearLayout>
     </ScrollView>
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/submitbtn"

@@ -21,7 +21,6 @@ class extraversionVSintroverseion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExtraversionVsintroverseionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Toast.makeText(this, "Quitting now will end the test and discard your answers.", Toast.LENGTH_LONG).show()
 
         // First question logic
         binding.oone.setOnClickListener {
@@ -139,6 +138,7 @@ class extraversionVSintroverseion : AppCompatActivity() {
                 val intent = Intent(this, sensingVSintution::class.java)
                 intent.putExtra("extraversionVSintroversion_Score", result)
                 startActivity(intent)
+                overridePendingTransition(0, 0)
                 finish()
             } else {
                 Toast.makeText(this, "Please answer all questions before proceeding.", Toast.LENGTH_SHORT).show()

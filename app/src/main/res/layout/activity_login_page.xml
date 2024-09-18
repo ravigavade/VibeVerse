@@ -7,7 +7,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg1"
     android:paddingHorizontal="@dimen/_8sdp"
     android:gravity="bottom"
     android:paddingBottom="@dimen/_100sdp"

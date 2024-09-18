@@ -23,6 +23,13 @@ class accountpage : AppCompatActivity() {
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
 
+        // Retrieve scores from previous activities
+        val extraversionScore = intent.getIntExtra("extraversionVSintroversion_Score", 0)
+        val sensingScore = intent.getIntExtra("sensingVSintution_Score", 0)
+        val thinkingScore = intent.getIntExtra("thinkingVSfeeling_Score", 0)
+        val judgingScore = intent.getIntExtra("judgingVSperceiving_Score", 0)
+        val mbtiType = intent.getStringExtra("mbtiType")
+
         // Get the current user's email
         val currentUser = auth.currentUser
         val email = currentUser?.email ?: "Unknown User"
@@ -48,6 +55,11 @@ class accountpage : AppCompatActivity() {
         binding.home.setOnClickListener{
             val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
+            intent.putExtra("extraversionVSintroversion_Score", extraversionScore)
+            intent.putExtra("sensingVSintution_Score", sensingScore)
+            intent.putExtra("thinkingVSfeeling_Score", thinkingScore)
+            intent.putExtra("judgingVSperceiving_Score", judgingScore)
+            intent.putExtra("mbtiType", mbtiType)
             finish()
             overridePendingTransition(0, 0)
         }

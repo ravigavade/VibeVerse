@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/_16sdp"
@@ -23,6 +23,19 @@
         android:scaleType="centerCrop"
         android:src="@drawable/mbtitestbanner"/>
     </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Myers Briggs Type Indicator"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+
+
 
     <LinearLayout
         android:paddingHorizontal="@dimen/_4sdp"
@@ -52,76 +65,93 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
+        android:backgroundTint="@color/darkgreen"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        app:cardCornerRadius="@dimen/_8sdp">
 
-            <ImageView
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_20sdp"
-                android:src="@drawable/about"/>
+        <LinearLayout
+            android:padding="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_marginStart="@dimen/_2sdp"
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14ssp"
-                android:fontFamily="@font/poppins"
-                android:textStyle="bold"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="About the assessment"/>
-    </LinearLayout>
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Identifies your personality type, revealing strengths, weaknesses, and growth areas. Gain insights for improving relationships, career, and personal development."
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins"/>
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/about"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About the assessment"/>
+            </LinearLayout>
 
-        <ImageView
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:src="@drawable/instructions"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Identifies your personality type, revealing strengths, weaknesses, and growth areas. Gain insights for improving relationships, career, and personal development."
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"/>
 
-        <TextView
-            android:layout_marginStart="@dimen/_2sdp"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_14ssp"
-            android:fontFamily="@font/poppins"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Instructions"/>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/instructions"/>
+
+                <TextView
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions"/>
+            </LinearLayout>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- There are no right answers to any of these question."
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Answer the questions quickly, do not over-analyze them. Go with what feels best."
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="- Answer the questions as 'the way you are',not the way you'd like to be seen by others. "
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- There are no right answers to any of these question."
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Answer the questions quickly, do not over-analyze them. Go with what feels best."
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Answer the questions as 'the way you are',not the way you'd like to be seen by others. "
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 
     <View

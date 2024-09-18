@@ -39,6 +39,7 @@ class judgingVSperceving : AppCompatActivity() {
                 intent.putExtra("thinkingVSfeeling_Score", thinkingScore)
                 intent.putExtra("judgingVSperceiving_Score", result)
                 startActivity(intent)
+                overridePendingTransition(0, 0)
                 finish()
             } else {
                 Toast.makeText(this, "Please answer all questions before proceeding.", Toast.LENGTH_SHORT).show()

@@ -98,6 +98,7 @@ class sensingVSintution : AppCompatActivity() {
                 intent.putExtra("extraversionVSintroversion_Score", extraversionScore)
                 intent.putExtra("sensingVSintution_Score", result2)
                 startActivity(intent)
+                overridePendingTransition(0, 0)
                 finish()
             } else {
                 Toast.makeText(this, "Please answer all questions before proceeding.", Toast.LENGTH_SHORT).show()
