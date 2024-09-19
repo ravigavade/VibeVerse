@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    tools:context=".Isfp">
+
+    <!-- Header Section -->
+    <FrameLayout
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="ISFP"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="The Adventurer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+    </FrameLayout>
+
+    <!-- Traits Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traits"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Artistic: ISFPs appreciate beauty and have a strong sense of aesthetics."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Sensitive: They are deeply in tune with their emotions and the feelings of others."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Flexible: ISFPs adapt easily to new situations and prefer to go with the flow."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Reserved: They are private and may prefer to keep their personal lives to themselves."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Work Style Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Style"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Creative and Imaginative: ISFPs excel in roles that require originality and artistic expression."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Adaptable: They handle changes in their work environment with ease."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Hands-On: ISFPs prefer practical, hands-on tasks over theoretical work."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer Section with Home Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challenges"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Overly Reserved"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Difficulty with Long-Term Goals"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Struggles with Routine Tasks"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strengths"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Artistic and Creative"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Empathetic and Supportive"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Adaptable to Change"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:layout_height="match_parent"
+    tools:context=".Isfj">
+
+    <!-- Header Section -->
+    <FrameLayout
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="ISFJ"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="The Protector"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </FrameLayout>
+
+    <!-- Traits Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traits"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Caring: ISFJs are empathetic and compassionate."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Detail-Oriented: They focus on completing tasks accurately."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Reliable: ISFJs are committed and dependable."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Organized: They appreciate structure and planning."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Relationships Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In Relationships"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Supportive: ISFJs offer emotional support to loved ones."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Loyal: They are committed to relationships and friendships."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Reliable: They offer practical help and reliability in relationships."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Challenges and Strengths Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Challenges Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challenges"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Overworking themselves"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Struggling to say 'No'"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Taking criticism to heart"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Strengths Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strengths"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Compassionate"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Loyal"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Practical"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Do you focus more on the facts and details or on the bigger picture and possibilities?"
+                        android:text="I prefer to focus on concrete facts and details rather than abstract theories."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="When learning something new, do you prefer to rely on practical experience or theories and concepts?"
+                        android:text="I often find myself thinking about future possibilities and how things could be different."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -203,7 +203,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="Do you tend to remember specific details more easily than general impressions?"
+                        android:text="I rely on past experiences and practical solutions when making decisions."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -271,7 +271,7 @@
                         android:textColor="@color/black"
 
                         android:layout_height="wrap_content"
-                        android:text="When solving problems, do you usually prefer tried-and-true methods or exploring new, creative options?"
+                        android:text="I am more interested in the big picture and underlying patterns than in specific details."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -339,7 +339,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="Do you tend to focus more on what is happening right now or on future possibilities?"
+                        android:text="I enjoy solving problems by following established procedures and using step-by-step approaches."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -395,28 +395,24 @@
 
         </LinearLayout>
     </ScrollView>
-
-
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/nextbtn"
         android:layout_width="match_parent"
         android:backgroundTint="@color/black"
         android:layout_marginBottom="@dimen/_20sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         app:cardCornerRadius="@dimen/_10ssp"
         android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/nextbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="next"
-            android:fontFamily="@font/poppins"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp"
-            android:layout_margin="@dimen/_8sdp"/>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_8sdp"/>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

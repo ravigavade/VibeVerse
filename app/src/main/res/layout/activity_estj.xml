@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:layout_height="match_parent"
+    tools:context=".Estj">
+
+    <!-- Header Section -->
+    <FrameLayout
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="ESTJ"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="The Executive"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </FrameLayout>
+
+    <!-- Traits Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traits"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Organized: ESTJs are highly organized and efficient in their approach to tasks."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Practical: They prefer practical solutions and are good at handling logistical challenges."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Assertive: ESTJs are confident and assertive in their decision-making."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Responsible: They take their responsibilities seriously and are dependable."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Relationships Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgreen"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:paddingVertical="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In Relationships"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Committed: ESTJs are dedicated and committed partners in their relationships."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Supportive: They are supportive and offer practical help to their partners."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Dependable: ESTJs are reliable and trustworthy in their relationships."
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:paddingHorizontal="@dimen/_6sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Challenges and Strengths Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Challenges Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challenges"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Stubborn"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Overly Critical"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Rigid"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Strengths Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkgreen"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strengths"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Leadership Skills"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Efficient"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Problem Solver"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="@dimen/_6sdp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

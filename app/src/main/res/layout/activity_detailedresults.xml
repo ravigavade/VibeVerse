@@ -35,7 +35,7 @@
                 android:fontFamily="@font/poppins"/>
             <TextView
                 android:id="@+id/typetv2"
-                android:paddingStart="@dimen/_6sdp"
+                android:paddingStart="@dimen/_6ssp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="type"
@@ -337,6 +337,7 @@
                 android:layout_height="@dimen/_50sdp"
                 app:cardCornerRadius="@dimen/_50sdp">
                 <ImageView
+                    android:id="@+id/img1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/mbtitestbanner"
@@ -371,6 +372,8 @@
                 android:layout_height="@dimen/_50sdp"
                 app:cardCornerRadius="@dimen/_50sdp">
                 <ImageView
+                    android:id="@+id/img2"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/mbtitestbanner"
@@ -405,6 +408,8 @@
                 android:layout_height="@dimen/_50sdp"
                 app:cardCornerRadius="@dimen/_50sdp">
                 <ImageView
+                    android:id="@+id/img3"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/mbtitestbanner"
@@ -439,6 +444,8 @@
                 android:layout_height="@dimen/_50sdp"
                 app:cardCornerRadius="@dimen/_50sdp">
                 <ImageView
+                    android:id="@+id/img4"
+
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/mbtitestbanner"

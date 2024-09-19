@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Do you prefer to plan ahead and follow a schedule, or be spontaneous and flexible with plans?"
+                        android:text="I prefer to have a clear plan and stick to it rather than being spontaneous."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="When working on a project, do you prefer to complete it well ahead of time or work closer to the deadline?"
+                        android:text="I feel more comfortable when I have the flexibility to adapt to new information and changes."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -205,7 +205,7 @@
                         android:fontFamily="@font/poppins"
 
                         android:padding="@dimen/_8sdp"
-                        android:text="Do you feel more comfortable when decisions are made or when options are kept open?"
+                        android:text="I like to complete tasks and make decisions well before deadlines."
                         android:textColor="@color/black" />
 
                     <LinearLayout
@@ -273,9 +273,7 @@
                         android:textColor="@color/black"
 
                         android:layout_height="wrap_content"
-                        android:text="When approaching tasks, do you prefer to have a clear plan or go with the flow and adapt as you go??
-
-"
+                        android:text="I often leave things open-ended and am comfortable with last-minute changes."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -344,7 +342,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="Are you more likely to stick to a task until it is completed or switch between tasks based on what feels right in the moment?"
+                        android:text="I value structure and organization in my daily life and work."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout

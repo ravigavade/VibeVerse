@@ -117,10 +117,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Detail-oriented with strong focus"
                 trait3 = "• Loyal and dependable friend"
                 trait4 = "• Responsible in all aspects"
-                famousPerson1 = "• George Washington"
-                famousPerson2 = "• Angela Merkel"
-                famousPerson3 = "• Warren Buffett"
-                famousPerson4 = "• John D. Rockefeller"
+                famousPerson1 = "George Washington"
+                famousPerson2 = "Angela Merkel"
+                famousPerson3 = "Warren Buffett"
+                famousPerson4 = "John D. Rockefeller"
             }
             "ISFJ" -> {
                 typeName = "The Protector"
@@ -213,10 +213,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Action-oriented problem solver"
                 trait3 = "• Practical with immediate results"
                 trait4 = "• Spontaneous and adaptable"
-                famousPerson1 = "• Donald Trump"
-                famousPerson2 = "• Ernest Hemingway"
-                famousPerson3 = "• Richard Branson"
-                famousPerson4 = "• Alexander the Great"
+                famousPerson1 = "Donald Trump"
+                famousPerson2 = "Ernest Hemingway"
+                famousPerson3 = "Richard Branson"
+                famousPerson4 = "Alexander the Great"
             }
             "ESFP" -> {
                 typeName = "The Performer"
@@ -225,10 +225,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Fun-loving and lively personality"
                 trait3 = "• Sociable with high energy"
                 trait4 = "• Enthusiastic and engaging"
-                famousPerson1 = "• Marilyn Monroe"
-                famousPerson2 = "• Elvis Presley"
-                famousPerson3 = "• Leonardo DiCaprio"
-                famousPerson4 = "• Jennifer Lawrence"
+                famousPerson1 = "Marilyn Monroe"
+                famousPerson2 = "Elvis Presley"
+                famousPerson3 = "Leonardo DiCaprio"
+                famousPerson4 = "Jennifer Lawrence"
             }
             "ENFP" -> {
                 typeName = "The Champion"
@@ -237,10 +237,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Imaginative and creative thinker"
                 trait3 = "• Passionate about personal goals"
                 trait4 = "• Inspiring and motivational"
-                famousPerson1 = "• Robin Williams"
-                famousPerson2 = "• Walt Disney"
-                famousPerson3 = "• Jim Carrey"
-                famousPerson4 = "• Richard Branson"
+                famousPerson1 = "Robin Williams"
+                famousPerson2 = "Walt Disney"
+                famousPerson3 = "Jim Carrey"
+                famousPerson4 = "Richard Branson"
             }
             "ENTP" -> {
                 typeName = "The Visionary"
@@ -249,10 +249,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Quick-witted with sharp intellect"
                 trait3 = "• Debater with strong arguments"
                 trait4 = "• Curious and open-minded"
-                famousPerson1 = "• Steve Jobs"
-                famousPerson2 = "• Thomas Edison"
-                famousPerson3 = "• Mark Twain"
-                famousPerson4 = "• Benjamin Franklin"
+                famousPerson1 = "Steve Jobs"
+                famousPerson2 = "Thomas Edison"
+                famousPerson3 = "Mark Twain"
+                famousPerson4 = "Benjamin Franklin"
             }
             "ESTJ" -> {
                 typeName = "The Supervisor"
@@ -261,10 +261,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Practical and efficient"
                 trait3 = "• Reliable and trustworthy"
                 trait4 = "• Strong focus on results"
-                famousPerson1 = "• Margaret Thatcher"
-                famousPerson2 = "• George W. Bush"
-                famousPerson3 = "• Andrew Carnegie"
-                famousPerson4 = "• John D. Rockefeller"
+                famousPerson1 = "Margaret Thatcher"
+                famousPerson2 = "George W. Bush"
+                famousPerson3 = "Andrew Carnegie"
+                famousPerson4 = "John D. Rockefeller"
             }
             "ESFJ" -> {
                 typeName = "The Provider"
@@ -273,10 +273,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Dedicated to helping others"
                 trait3 = "• Strong sense of community"
                 trait4 = "• Collaborative and cooperative"
-                famousPerson1 = "• Oprah Winfrey"
-                famousPerson2 = "• Taylor Swift"
-                famousPerson3 = "• Sally Field"
-                famousPerson4 = "• Jennifer Garner"
+                famousPerson1 = "Oprah Winfrey"
+                famousPerson2 = "Taylor Swift"
+                famousPerson3 = "Sally Field"
+                famousPerson4 = "Jennifer Garner"
             }
             "ENFJ" -> {
                 typeName = "The Teacher"
@@ -285,10 +285,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Empathetic towards others"
                 trait3 = "• Inspiring and motivating"
                 trait4 = "• Visionary with a focus on growth"
-                famousPerson1 = "• Martin Luther King Jr."
-                famousPerson2 = "• Nelson Mandela"
-                famousPerson3 = "• John F. Kennedy"
-                famousPerson4 = "• Eleanor Roosevelt"
+                famousPerson1 = "Martin Luther King Jr."
+                famousPerson2 = "Nelson Mandela"
+                famousPerson3 = "John F. Kennedy"
+                famousPerson4 = "Eleanor Roosevelt"
             }
             "ENTJ" -> {
                 typeName = "The Commander"
@@ -297,10 +297,10 @@ class detailedresults : AppCompatActivity() {
                 trait2 = "• Strategic with long-term vision"
                 trait3 = "• Confident and assertive"
                 trait4 = "• Efficient and goal-oriented"
-                famousPerson1 = "• Napoleon Bonaparte"
-                famousPerson2 = "• Margaret Thatcher"
-                famousPerson3 = "• Steve Jobs"
-                famousPerson4 = "• Elon Musk"
+                famousPerson1 = "Napoleon Bonaparte"
+                famousPerson2 = "Margaret Thatcher"
+                famousPerson3 = "Steve Jobs"
+                famousPerson4 = "Elon Musk"
             }
         }
 
@@ -314,6 +314,111 @@ class detailedresults : AppCompatActivity() {
         binding.trait3.text = trait3
         binding.trait4.text = trait4
         binding.famoustype.text="Famous $mbtiType"
+
+        when (mbtiType) {
+            "ENTJ" -> {
+                binding.img1.setImageResource(R.drawable.nbb)
+                binding.img2.setImageResource(R.drawable.mtt)
+                binding.img3.setImageResource(R.drawable.applle)
+                binding.img4.setImageResource(R.drawable.elon)
+            }
+            "ENTP" -> {
+                binding.img1.setImageResource(R.drawable.applle)
+                binding.img2.setImageResource(R.drawable.ted)
+                binding.img3.setImageResource(R.drawable.mtt)
+                binding.img4.setImageResource(R.drawable.bff)
+
+            }
+            "ESFJ" -> {
+                binding.img1.setImageResource(R.drawable.oww)
+                binding.img2.setImageResource(R.drawable.tss)
+                binding.img3.setImageResource(R.drawable.sff)
+                binding.img4.setImageResource(R.drawable.jgg)
+
+            }
+            "ESFP" -> {
+                binding.img1.setImageResource(R.drawable.mm)
+                binding.img2.setImageResource(R.drawable.ep)
+                binding.img3.setImageResource(R.drawable.ld)
+                binding.img4.setImageResource(R.drawable.jl1)
+
+            }
+            "ESTJ" -> {
+                binding.img1.setImageResource(R.drawable.mtt)
+                binding.img2.setImageResource(R.drawable.bush)
+                binding.img3.setImageResource(R.drawable.acc)
+                binding.img4.setImageResource(R.drawable.jrr)
+            }
+            "ESTP" -> {
+                binding.img1.setImageResource(R.drawable.trump)
+                binding.img2.setImageResource(R.drawable.eh)
+                binding.img3.setImageResource(R.drawable.rb)
+                binding.img4.setImageResource(R.drawable.great)
+            }
+            "INFJ" -> {
+                binding.img1.setImageResource(R.drawable.nm)
+                binding.img2.setImageResource(R.drawable.mlk)
+                binding.img3.setImageResource(R.drawable.er)
+                binding.img4.setImageResource(R.drawable.ma)
+            }
+            "INFP" -> {
+                binding.img1.setImageResource(R.drawable.jk)
+                binding.img2.setImageResource(R.drawable.ws)
+                binding.img3.setImageResource(R.drawable.jl)
+                binding.img4.setImageResource(R.drawable.vw)
+            }
+            "INTJ" -> {
+                binding.img1.setImageResource(R.drawable.elon)
+                binding.img2.setImageResource(R.drawable.blg)
+                binding.img3.setImageResource(R.drawable.fb)
+                binding.img4.setImageResource(R.drawable.issac)
+            }
+            "INTP" -> {
+                binding.img1.setImageResource(R.drawable.ae)
+                binding.img2.setImageResource(R.drawable.sh)
+                binding.img3.setImageResource(R.drawable.rd)
+                binding.img4.setImageResource(R.drawable.mc)
+            }
+            "ISFJ" -> {
+                binding.img1.setImageResource(R.drawable.mt)
+                binding.img2.setImageResource(R.drawable.rp)
+                binding.img3.setImageResource(R.drawable.qe)
+                binding.img4.setImageResource(R.drawable.jc)
+            }
+            "ISFP" -> {
+                binding.img1.setImageResource(R.drawable.fk)
+                binding.img2.setImageResource(R.drawable.bd)
+                binding.img3.setImageResource(R.drawable.db)
+                binding.img4.setImageResource(R.drawable.mj)
+            }
+            "ISTJ" -> {
+                binding.img1.setImageResource(R.drawable.gw)
+                binding.img2.setImageResource(R.drawable.angela)
+                binding.img3.setImageResource(R.drawable.warren)
+                binding.img4.setImageResource(R.drawable.john)
+            }
+            "ISTP" -> {
+                binding.img1.setImageResource(R.drawable.applle)
+                binding.img2.setImageResource(R.drawable.ae)
+                binding.img3.setImageResource(R.drawable.bl)
+                binding.img4.setImageResource(R.drawable.jb)
+            }
+            "ESTP" -> {
+                binding.img1.setImageResource(R.drawable.trump)
+                binding.img2.setImageResource(R.drawable.eh)
+                binding.img3.setImageResource(R.drawable.rb)
+                binding.img4.setImageResource(R.drawable.great)
+            }
+            "INFP" -> {
+                binding.img1.setImageResource(R.drawable.jk)
+                binding.img2.setImageResource(R.drawable.ws)
+                binding.img3.setImageResource(R.drawable.jl)
+                binding.img4.setImageResource(R.drawable.vw)
+            }
+            else -> {
+                // Handle default case if necessary
+            }
+        }
 
         // Set the famous personalities
         binding.famousPerson1.text = famousPerson1

@@ -29,7 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="mail"
+        android:singleLine="true"
         android:textColor="@color/black"
+        android:lines="1"
         android:maxLines="1"
         android:background="@drawable/blackborder"
         android:textColorHint="#868383"
@@ -41,6 +43,8 @@
     <EditText
         android:id="@+id/pass"
         android:maxLines="1"
+        android:lines="1"
+        android:singleLine="true"
         android:textColor="@color/black"
         android:password="true"
         android:layout_width="match_parent"

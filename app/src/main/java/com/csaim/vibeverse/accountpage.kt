@@ -60,7 +60,6 @@ class accountpage : AppCompatActivity() {
             intent.putExtra("thinkingVSfeeling_Score", thinkingScore)
             intent.putExtra("judgingVSperceiving_Score", judgingScore)
             intent.putExtra("mbtiType", mbtiType)
-            finish()
             overridePendingTransition(0, 0)
         }
 

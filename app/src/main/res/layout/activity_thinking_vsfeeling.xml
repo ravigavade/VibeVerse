@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Do you usually make decisions based on logical analysis or personal values?"
+                        android:text="I prefer to make decisions based on logical analysis and objective criteria."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="When providing feedback, do you focus more on being honest and objective or on how the"
+                        android:text="I often consider how my decisions will affect other people's feelings before making a choice."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -205,7 +205,7 @@
                         android:fontFamily="@font/poppins"
 
                         android:padding="@dimen/_8sdp"
-                        android:text="In a disagreement, is it more important to focus on what’s right or on maintaining harmony?"
+                        android:text="I prioritize fairness and consistency when solving problems, even if it means being impersonal."
                         android:textColor="@color/black" />
 
                     <LinearLayout
@@ -273,7 +273,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Do you tend to prioritize fairness or compassion when making decisions?"
+                        android:text="I tend to focus on the emotional impact of my decisions on others rather than just the logical outcome."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -340,7 +340,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="When evaluating options, do you prefer to focus on the pros and cons or on how it aligns with your values?"
+                        android:text="I value making decisions that align with my personal values and the well-being of others over strict adherence to rules."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout

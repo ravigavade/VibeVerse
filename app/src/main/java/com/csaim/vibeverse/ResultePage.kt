@@ -32,6 +32,10 @@ class ResultePage : AppCompatActivity() {
         // Optionally start playback
         gifDrawable.start()
 
+        binding.imgresult.setImageResource(R.drawable.tanslogo)
+
+
+
 
 
         // Retrieve scores from previous activities
@@ -43,6 +47,7 @@ class ResultePage : AppCompatActivity() {
         // Calculate MBTI type
         val mbtiType = calculateMBTIType(extraversionScore, sensingScore, thinkingScore, judgingScore)
         binding.resulttv.text = "$mbtiType"
+
 
         binding.conttbtn.setOnClickListener {
             val intent = Intent(this, detailedresults::class.java)
@@ -56,6 +61,8 @@ class ResultePage : AppCompatActivity() {
         }
 
 
+
+
     }
     private fun calculateMBTIType(extraversion: Int, sensing: Int, thinking: Int, judging: Int): String {
         val eOrI = if (extraversion >= 0) "E" else "I"
@@ -64,4 +71,7 @@ class ResultePage : AppCompatActivity() {
         val jOrP = if (judging >= 0) "J" else "P"
         return "$eOrI$sOrN$tOrF$jOrP"
     }
+
+
+
 }

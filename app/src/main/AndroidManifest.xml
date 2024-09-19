@@ -13,30 +13,103 @@
         android:theme="@style/Theme.VibeVerse"
         tools:targetApi="31">
         <activity
+            android:screenOrientation="portrait"
+            android:name=".Entj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Enfj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Esfj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Estj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Entp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Enfp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Esfp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Estp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Intp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Infp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Isfp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Istp"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Intj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Infj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Isfj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Istj"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
             android:name=".accountpage"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".thinkingVSfeeling"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".detailedresults"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ResultePage"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".MBTItest"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".GetStarted"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".sensingVSintution"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".RegisterPage"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".LoginPage"
             android:exported="true">
             <intent-filter>
@@ -46,16 +119,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".judgingVSperceving"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".extraversionVSintroverseion"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".MainActivity"
             android:exported="true" />
 
         <meta-data
+            android:screenOrientation="portrait"
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>

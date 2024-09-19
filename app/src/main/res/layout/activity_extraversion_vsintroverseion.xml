@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Do you prefer to spend your time in larger social gatherings or smaller, intimate settings?"
+                        android:text="I enjoy engaging in social activities and spending time with a large group of people."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -137,7 +137,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="Do you prefer to spend your time in larger social gatherings or smaller, intimate settings?"
+                        android:text="I feel drained after spending a lot of time in social situations.
+"
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -204,7 +205,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="Do you prefer to spend your time in larger social gatherings or smaller, intimate settings?"
+                        android:text="I often seek out new social experiences and meet new people."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -273,7 +274,7 @@
                         android:textColor="@color/black"
 
                         android:layout_height="wrap_content"
-                        android:text="Do you prefer to spend your time in larger social gatherings or smaller, intimate settings?"
+                        android:text="I prefer quiet environments and often need alone time to recharge."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
@@ -343,7 +344,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
 
-                        android:text="Do you prefer to spend your time in larger social gatherings or smaller, intimate settings?"
+                        android:text="I feel more energized and motivated after participating in group activities."
                         android:padding="@dimen/_8sdp"
                         android:fontFamily="@font/poppins"/>
                     <LinearLayout
