@@ -339,7 +339,7 @@ class detailedresults : AppCompatActivity() {
             "ESFP" -> {
                 binding.img1.setImageResource(R.drawable.mm)
                 binding.img2.setImageResource(R.drawable.ep)
-                binding.img3.setImageResource(R.drawable.ld)
+                binding.img3.setImageResource(R.drawable.acc)
                 binding.img4.setImageResource(R.drawable.jl1)
 
             }
@@ -428,7 +428,6 @@ class detailedresults : AppCompatActivity() {
 
         binding.traittv.text="$mbtiType's have the following personality traits"
 
-        val REQUEST_CODE=0
 
         binding.homebtn.setOnClickListener {
             val intent=Intent(this,MainActivity::class.java)

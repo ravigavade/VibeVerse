@@ -32,10 +32,10 @@
         android:maxLines="1"
         android:hint="mail"
         android:background="@drawable/blackborder"
-        android:textColorHint="#868383"
+        android:textColorHint="#6A6666"
         android:singleLine="true"
-        android:padding="@dimen/_8sdp"
-        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
         android:backgroundTint="#DCDADA"
         />
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:hint="password"
         android:background="@drawable/blackborder"
-        android:textColorHint="#868383"
+        android:textColorHint="#6A6666"
         android:padding="@dimen/_8sdp"
         android:layout_margin="@dimen/_8sdp"
         android:backgroundTint="#DCDADA"
@@ -80,6 +80,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/_13ssp"
         android:text="Already have an account?"
         android:layout_marginStart="@dimen/_8sdp"/>
 

@@ -34,8 +34,8 @@
         android:lines="1"
         android:maxLines="1"
         android:background="@drawable/blackborder"
-        android:textColorHint="#868383"
-        android:padding="@dimen/_8sdp"
+        android:textColorHint="#6A6666"
+        android:padding="@dimen/_10sdp"
         android:layout_margin="@dimen/_8sdp"
         android:backgroundTint="#DCDADA"
         />
@@ -51,8 +51,8 @@
         android:layout_height="wrap_content"
         android:hint="password"
         android:background="@drawable/blackborder"
-        android:textColorHint="#868383"
-        android:padding="@dimen/_8sdp"
+        android:textColorHint="#6A6666"
+        android:padding="@dimen/_10sdp"
         android:layout_margin="@dimen/_8sdp"
         android:backgroundTint="#DCDADA"
         />
@@ -81,6 +81,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:padding="@dimen/_4sdp"
         android:text="New to VibeVerse?"
         android:layout_marginStart="@dimen/_8sdp"/>
 
